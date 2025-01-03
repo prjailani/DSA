@@ -1,0 +1,1 @@
+Consider the integers m and n. Calculate the cubes from m to n. If m is greater than n then return 0 (or) print the proper message.
