@@ -8,5 +8,6 @@ public class Main {
             sum += i*i*i;
         }
         System.out.println("Sum = "+sum);
+        scanner.close();
     }   
 }

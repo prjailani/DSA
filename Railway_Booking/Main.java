@@ -24,5 +24,6 @@ public class Main{
             cost *= 0.95;
         }
         System.out.println("Total cost = "+cost);
+        scanner.close();
     }
 }
