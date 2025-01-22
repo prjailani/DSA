@@ -1,0 +1,1 @@
+8. Complete the function delete_element(), which deletes the element at the given position or print "deletion not possible if given position is out of bound

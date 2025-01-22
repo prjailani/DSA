@@ -1,0 +1,1 @@
+5. Given the size of array and array values to function Array_multiplication(), do complete the function by replacing every element by the product of previous and next element for all index.

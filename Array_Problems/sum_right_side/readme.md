@@ -1,0 +1,1 @@
+3. Write a program to complete the function sum_of_right_side_ele(), which receivers number of elements and array, do replace every element in the array with the sum of it's right side elements and return the same array. Note: Don't use extra arrays

@@ -1,0 +1,1 @@
+2. Write a program to complete the function replace_ele(), which receives number of elements and array,  do replace every element in the array with the sum of every other element and return the same array. Note: Don't use extra array.

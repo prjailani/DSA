@@ -1,0 +1,1 @@
+6. Given the size of array and array values to function arr_reverse(), write a code to reverse the given array.

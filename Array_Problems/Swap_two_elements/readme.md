@@ -1,0 +1,1 @@
+1. Given an array and two positions, do swap those elements at those two positions., If the position mention exceeds index limit, then print invalid.

@@ -1,0 +1,1 @@
+7. Complete the function insert_element() to insert the given element at given position and display the updated array.
