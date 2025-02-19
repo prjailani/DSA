@@ -1,8 +1,13 @@
+package Array_Problems.sum_right_side;
 public class Main {
-    static int[] Array_multiplication(int[] arr, int n){
-        int[] copy = arr.clone();
-        for(int i=1;i<n-1;i++){
-            arr[i] = copy[i-1]*copy[i+1];
+    static int[] sum_of_right_side_ele(int[] arr, int n){
+        int total = 0;
+        for(int i:arr){
+            total+=i;
+        }
+        for(int i=0;i<n;i++){
+            total -= arr[i];
+            arr[i] = total;
         }
         return arr;
     }
@@ -13,7 +18,7 @@ public class Main {
             System.out.print(i+" ");
         }
         System.out.println("\nAfter");
-        for(int i: Array_multiplication(arr, arr.length)){
+        for(int i: sum_of_right_side_ele(arr, arr.length)){
             System.out.print(i+" ");
         }
     }

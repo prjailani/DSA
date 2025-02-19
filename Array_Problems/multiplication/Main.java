@@ -1,13 +1,9 @@
+package Array_Problems.multiplication;
 public class Main {
-    static int[] arr_reverse(int[] arr, int n){
-        int start = 0;
-        int end = n-1;
-        while(start<end){
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+    static int[] Array_multiplication(int[] arr, int n){
+        int[] copy = arr.clone();
+        for(int i=1;i<n-1;i++){
+            arr[i] = copy[i-1]*copy[i+1];
         }
         return arr;
     }
@@ -18,7 +14,7 @@ public class Main {
             System.out.print(i+" ");
         }
         System.out.println("\nAfter");
-        for(int i: arr_reverse(arr, arr.length)){
+        for(int i: Array_multiplication(arr, arr.length)){
             System.out.print(i+" ");
         }
     }

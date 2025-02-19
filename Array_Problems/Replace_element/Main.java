@@ -1,3 +1,4 @@
+package Array_Problems.Replace_element;
 public class Main {
     static int[] replace_ele(int[] arr, int n){
         int total = 0;

@@ -1,3 +1,4 @@
+package String_Problems.Frequency;
 import java.util.Scanner;
 
 public class Frequency2 {

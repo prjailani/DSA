@@ -1,3 +1,4 @@
+package Array_Problems.insert_ele;
 public class Main {
     static int[] insert_element(int[] arr, int n,int ele,int pos){
         int[] res = new int[n+1];

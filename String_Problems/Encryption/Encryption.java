@@ -1,4 +1,4 @@
-package Basic_String_Problems.Encryption;
+package String_Problems.Encryption;
 import java.util.Scanner;
 
 public class Encryption {
