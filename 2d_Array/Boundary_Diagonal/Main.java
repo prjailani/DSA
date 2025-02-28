@@ -26,7 +26,7 @@ public class Main {
             System.out.print(arr[rows-1][c]+" ");
         }
 
-        for(int r=rows-2;r>=0;r--){
+        for(int r=rows-2;r>=1;r--){
             System.out.print(arr[r][0]+" ");
         }
 
