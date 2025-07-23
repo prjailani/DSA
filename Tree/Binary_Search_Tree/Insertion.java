@@ -1,3 +1,4 @@
+package Binary_Search_Tree;
 class Node{ 
     //properties of node
     int data;
@@ -61,7 +62,7 @@ class Tree{
 }
 
 
-class Main{
+class Insertion{
     
     public static void main(String[]args){
         Tree tree1 = new Tree();
