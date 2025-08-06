@@ -60,7 +60,6 @@ public class Main {
                 System.out.println(ed.src+" -> "+ed.dest+" : "+ed.w);
             }
         }
-
         System.out.println("Total cost = "+sum);
     }
 }
