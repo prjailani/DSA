@@ -1,14 +1,16 @@
 import java.util.*;
 
 public class Main{
-    static class Pair{
-        int v,p,w;
-        Pair(int v,int p,int w){
-            this.v = v;
-            this.p = p;
-            this.w = w;
-        }
-    }
+    // static class Pair{
+    //     int v,p,w;
+    //     Pair(int v,int p,int w){
+    //         this.v = v;
+    //         this.p = p;
+    //         this.w = w;
+    //     }
+    // }
+
+    record Pair(int v,int p,int w){}
 
     public static void main(String[] args) {
         int V = 5;
@@ -25,7 +27,7 @@ public class Main{
         g.get(1).add(new int[] {0,2});
 
         g.get(0).add(new int[] {3,6});
-        g.get(3).add(new int[] {0,2});
+        g.get(3).add(new int[] {0,6});
 
         g.get(1).add(new int[] {2,3});
         g.get(2).add(new int[] {1,3});

@@ -1,8 +1,19 @@
-package ArrayList_Implementation;
 import java.util.*;
 
-import Queue;
-import Stack;
+public class Main{
+    public static void main(String[] args) {
+        Graph g = new Graph(5);
+        g.insert(0, 1);
+        g.insert(0, 3);
+        g.insert(1, 2);
+        g.insert(1, 3);
+        g.insert(2, 4);
+        g.insert(3, 4);
+        g.checkPath(0, 4);
+        System.out.println(g.hasCyclebfs());
+        System.out.println(g.hasCycledfs());
+    }
+}
 
 class Graph{
     ArrayList<ArrayList<Integer>> graph;
@@ -85,18 +96,37 @@ class Graph{
         else
             System.out.println("No Path Exist");
     }
-}
 
-public class Main{
-    public static void main(String[] args) {
-        Graph g = new Graph(5);
-        g.insert(0, 1);
-        g.insert(0, 3);
-        g.insert(1, 2);
-        g.insert(1, 3);
-        g.insert(2, 4);
-        g.insert(3, 4);
-        g.checkPath(0, 4);
-        
+    boolean hasCyclebfs(){
+        boolean[] vis = new boolean[graph.size()];
+        Queue<Integer> q = new LinkedList<>();
+        q.add(0);
+        vis[0] = true;
+        while(!q.isEmpty()){
+            int temp = q.poll();
+            for(int i:graph.get(temp)){
+                if(vis[i])
+                    return true;
+                q.add(i);
+            }
+        }
+        return false;
+    }
+
+    boolean hasCycledfs(){
+        boolean[] vis = new boolean[graph.size()];
+        Stack<Integer> st = new Stack<>();
+        st.push(0);
+        vis[0] = true;
+        while(!st.isEmpty()){
+            int temp = st.pop();
+            for(int i:graph.get(temp)){
+                if(vis[i])
+                    return true;
+                st.push(i);
+            }
+        }
+        return false;
     }
 }
+
