@@ -1,0 +1,6 @@
+# Ignore compiled class files and temp files
+*.class
+
+tempCodeRunnerFile.java
+
+.vscode/
